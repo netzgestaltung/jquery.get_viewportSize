@@ -12,7 +12,7 @@
 jQuery.get_viewportSize = function get_viewportSize() {
   var size = {
     width: window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
-    height: $('html').innerHeight()
+    height: window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
   }
   return size;
 };
